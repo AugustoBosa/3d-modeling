@@ -1,6 +1,6 @@
 # RETOMAR — 3d-modeling
 
-**Última atualização:** 2026-11-09 · **Fase atual:** MVP (F0–F4) implementado e validado no DoD automático · **Git:** nenhum commit; tudo em `git add` (branch `main`) · **Detalhes:** `docs/orq/STATUS.md`
+**Última atualização:** 2026-11-09 · **Fase atual:** MVP (F0–F4) implementado, validado e publicado · **Repo:** https://github.com/AugustoBosa/3d-modeling (público) · **Site:** https://augustobosa.github.io/3d-modeling/ · **Detalhes:** `docs/orq/STATUS.md`
 
 ## Como rodar
 
@@ -23,7 +23,7 @@ Relatórios por fase: `docs/orq/relatorio-*.md`. Paridade UI × MCP: `docs/orq/p
 
 | # | O quê |
 |---|---|
-| H1 | Criar o repo `AugustoBosa/3d-modeling` (público, MIT), primeiro commit (pedir ao Claude), push e Pages com source "GitHub Actions" |
+| H1 | ✅ 2026-11-09: repo criado, push feito, Pages via GitHub Actions no ar |
 | H2 | Abrir `packages/core/test/saida/caixa-com-tampa-bambu-p2s.3mf` no Bambu Studio (P2S, slots 1 e 2) e `caixa-com-tampa-anycubic-i3-mega-s.3mf` no PrusaSlicer |
 | H3 | Imprimir uma peça em cada impressora e medir (±0,2 mm) |
 | H4 | Usar de verdade: teclado §7.3, clique em `LF`, arrastar arquivo para importar, Salvar como/Abrir (File System Access), toque no celular |

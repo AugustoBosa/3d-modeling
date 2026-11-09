@@ -28,6 +28,13 @@ Plano: `docs/PLANO_EXECUCAO.md`. Atualizado pelo orquestrador a cada onda.
 
 ## Validações do orquestrador
 
+### Publicação (2026-11-09) ✅
+
+- Commits `00c5f0b` (MVP) e `edcb393` (CI). Repo público https://github.com/AugustoBosa/3d-modeling; Pages com fonte GitHub Actions.
+- 1º deploy barrado no `npm test`: melhor de 15 do solver deu 18,97 ms no runner do GitHub (aqui 6 ms). Metas de 16 ms ganharam folga de 3× só com `CI` definido. 2º deploy: testes, build e deploy ✅.
+- Site publicado: abre com 2 corpos em 1,28 s sem cache (meta < 2 s), console sem erros ✅; 375 px com `#customizar&L=100` → peça 100×50×30, sem rolagem horizontal, 3MF com miniatura ✅.
+- Detalhe: trocar só o `#` numa aba já aberta no site não recarrega, então o link de customizar só vale ao abrir a página.
+
 ### Validação final do MVP (2026-11-09) ✅
 
 | # | Resultado |
