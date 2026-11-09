@@ -1,0 +1,18 @@
+{
+  "name": "3d-modeling-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Servidor MCP do 3d-modeling: stdio para o agente, HTTP+WebSocket em 127.0.0.1 para o app.",
+  "bin": { "3d-modeling-mcp": "./bin/3d-modeling-mcp.mjs" },
+  "dependencies": {
+    "@3dm/core": "*",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ws": "^8.22.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.2"
+  }
+}

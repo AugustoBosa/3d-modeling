@@ -1,0 +1,525 @@
+{
+  "formato": "3d-modeling",
+  "versao": 1,
+  "unidade": "mm",
+  "impressora": "bambu-p2s",
+  "parametros": {
+    "L": {
+      "expr": "80",
+      "unidade": "mm"
+    },
+    "W": {
+      "expr": "50",
+      "unidade": "mm"
+    },
+    "H": {
+      "expr": "30",
+      "unidade": "mm"
+    },
+    "parede": {
+      "expr": "2",
+      "unidade": "mm"
+    },
+    "folga": {
+      "expr": "0.2",
+      "unidade": "mm"
+    }
+  },
+  "features": [
+    {
+      "id": "sk1",
+      "tipo": "sketch",
+      "plano": {
+        "base": "XY",
+        "offset": 0
+      },
+      "entidades": [
+        {
+          "id": "p0",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "p1",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "p2",
+          "tipo": "ponto",
+          "x": 80,
+          "y": 0
+        },
+        {
+          "id": "p3",
+          "tipo": "ponto",
+          "x": 80,
+          "y": 50
+        },
+        {
+          "id": "p4",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 50
+        },
+        {
+          "id": "l1",
+          "tipo": "linha",
+          "a": "p1",
+          "b": "p2"
+        },
+        {
+          "id": "l2",
+          "tipo": "linha",
+          "a": "p2",
+          "b": "p3"
+        },
+        {
+          "id": "l3",
+          "tipo": "linha",
+          "a": "p3",
+          "b": "p4"
+        },
+        {
+          "id": "l4",
+          "tipo": "linha",
+          "a": "p4",
+          "b": "p1"
+        }
+      ],
+      "restricoes": [
+        {
+          "id": "r0",
+          "tipo": "fixa",
+          "e": [
+            "p0"
+          ],
+          "xy": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "r1",
+          "tipo": "horizontal",
+          "e": [
+            "l1"
+          ]
+        },
+        {
+          "id": "r2",
+          "tipo": "horizontal",
+          "e": [
+            "l3"
+          ]
+        },
+        {
+          "id": "r3",
+          "tipo": "vertical",
+          "e": [
+            "l2"
+          ]
+        },
+        {
+          "id": "r4",
+          "tipo": "vertical",
+          "e": [
+            "l4"
+          ]
+        },
+        {
+          "id": "r5",
+          "tipo": "distancia",
+          "e": [
+            "l1"
+          ],
+          "expr": "L"
+        },
+        {
+          "id": "r6",
+          "tipo": "distancia",
+          "e": [
+            "l2"
+          ],
+          "expr": "W"
+        },
+        {
+          "id": "r7",
+          "tipo": "fixa",
+          "e": [
+            "p1"
+          ],
+          "xy": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex1",
+      "tipo": "extrude",
+      "sketch": "sk1",
+      "distancia": "H",
+      "operacao": "nova"
+    },
+    {
+      "id": "sh1",
+      "tipo": "shell",
+      "alvo": "ex1",
+      "espessura": "parede",
+      "abrir": [
+        "topo"
+      ]
+    },
+    {
+      "id": "sk2",
+      "tipo": "sketch",
+      "plano": {
+        "base": "XY",
+        "offset": 30,
+        "offsetExpr": "H"
+      },
+      "entidades": [
+        {
+          "id": "p0",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "p1",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "p2",
+          "tipo": "ponto",
+          "x": 80,
+          "y": 0
+        },
+        {
+          "id": "p3",
+          "tipo": "ponto",
+          "x": 80,
+          "y": 50
+        },
+        {
+          "id": "p4",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 50
+        },
+        {
+          "id": "l1",
+          "tipo": "linha",
+          "a": "p1",
+          "b": "p2"
+        },
+        {
+          "id": "l2",
+          "tipo": "linha",
+          "a": "p2",
+          "b": "p3"
+        },
+        {
+          "id": "l3",
+          "tipo": "linha",
+          "a": "p3",
+          "b": "p4"
+        },
+        {
+          "id": "l4",
+          "tipo": "linha",
+          "a": "p4",
+          "b": "p1"
+        }
+      ],
+      "restricoes": [
+        {
+          "id": "r0",
+          "tipo": "fixa",
+          "e": [
+            "p0"
+          ],
+          "xy": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "r1",
+          "tipo": "horizontal",
+          "e": [
+            "l1"
+          ]
+        },
+        {
+          "id": "r2",
+          "tipo": "horizontal",
+          "e": [
+            "l3"
+          ]
+        },
+        {
+          "id": "r3",
+          "tipo": "vertical",
+          "e": [
+            "l2"
+          ]
+        },
+        {
+          "id": "r4",
+          "tipo": "vertical",
+          "e": [
+            "l4"
+          ]
+        },
+        {
+          "id": "r5",
+          "tipo": "distancia",
+          "e": [
+            "l1"
+          ],
+          "expr": "L"
+        },
+        {
+          "id": "r6",
+          "tipo": "distancia",
+          "e": [
+            "l2"
+          ],
+          "expr": "W"
+        },
+        {
+          "id": "r7",
+          "tipo": "fixa",
+          "e": [
+            "p1"
+          ],
+          "xy": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "tipo": "extrude",
+      "sketch": "sk2",
+      "distancia": "parede",
+      "operacao": "nova"
+    },
+    {
+      "id": "sk3",
+      "tipo": "sketch",
+      "plano": {
+        "base": "XY",
+        "offset": 27,
+        "offsetExpr": "H-3"
+      },
+      "entidades": [
+        {
+          "id": "p0",
+          "tipo": "ponto",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "p1",
+          "tipo": "ponto",
+          "x": 2.2,
+          "y": 2.2
+        },
+        {
+          "id": "p2",
+          "tipo": "ponto",
+          "x": 77.8,
+          "y": 2.2
+        },
+        {
+          "id": "p3",
+          "tipo": "ponto",
+          "x": 77.8,
+          "y": 47.800000000000004
+        },
+        {
+          "id": "p4",
+          "tipo": "ponto",
+          "x": 2.2,
+          "y": 47.800000000000004
+        },
+        {
+          "id": "l1",
+          "tipo": "linha",
+          "a": "p1",
+          "b": "p2"
+        },
+        {
+          "id": "l2",
+          "tipo": "linha",
+          "a": "p2",
+          "b": "p3"
+        },
+        {
+          "id": "l3",
+          "tipo": "linha",
+          "a": "p3",
+          "b": "p4"
+        },
+        {
+          "id": "l4",
+          "tipo": "linha",
+          "a": "p4",
+          "b": "p1"
+        }
+      ],
+      "restricoes": [
+        {
+          "id": "r0",
+          "tipo": "fixa",
+          "e": [
+            "p0"
+          ],
+          "xy": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "r1",
+          "tipo": "horizontal",
+          "e": [
+            "l1"
+          ]
+        },
+        {
+          "id": "r2",
+          "tipo": "horizontal",
+          "e": [
+            "l3"
+          ]
+        },
+        {
+          "id": "r3",
+          "tipo": "vertical",
+          "e": [
+            "l2"
+          ]
+        },
+        {
+          "id": "r4",
+          "tipo": "vertical",
+          "e": [
+            "l4"
+          ]
+        },
+        {
+          "id": "r5",
+          "tipo": "distancia",
+          "e": [
+            "l1"
+          ],
+          "expr": "L-2*parede-2*folga"
+        },
+        {
+          "id": "r6",
+          "tipo": "distancia",
+          "e": [
+            "l2"
+          ],
+          "expr": "W-2*parede-2*folga"
+        },
+        {
+          "id": "r7",
+          "tipo": "distanciaH",
+          "e": [
+            "p0",
+            "p1"
+          ],
+          "expr": "parede+folga"
+        },
+        {
+          "id": "r8",
+          "tipo": "distanciaV",
+          "e": [
+            "p0",
+            "p1"
+          ],
+          "expr": "parede+folga"
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "tipo": "extrude",
+      "sketch": "sk3",
+      "distancia": 3,
+      "operacao": "unir",
+      "alvo": "ex2"
+    }
+  ],
+  "marcadorHistorico": null,
+  "aparencia": {
+    "ex1": {
+      "cor": "#b8b4ac"
+    },
+    "ex2": {
+      "cor": "#6a8fb0"
+    }
+  },
+  "nome": "Caixa com tampa",
+  "expostos": [
+    {
+      "parametro": "L",
+      "rotulo": "Largura",
+      "tipo": "numero",
+      "min": 40,
+      "max": 160,
+      "passo": 5,
+      "grupo": "Medidas"
+    },
+    {
+      "parametro": "W",
+      "rotulo": "Profundidade",
+      "tipo": "numero",
+      "min": 30,
+      "max": 120,
+      "passo": 5,
+      "grupo": "Medidas"
+    },
+    {
+      "parametro": "H",
+      "rotulo": "Altura",
+      "tipo": "numero",
+      "min": 20,
+      "max": 80,
+      "passo": 5,
+      "grupo": "Medidas"
+    },
+    {
+      "parametro": "parede",
+      "rotulo": "Parede",
+      "tipo": "lista",
+      "opcoes": [
+        {
+          "rotulo": "Fina (1,6 mm)",
+          "valor": 1.6
+        },
+        {
+          "rotulo": "Normal (2 mm)",
+          "valor": 2
+        },
+        {
+          "rotulo": "Grossa (3 mm)",
+          "valor": 3
+        }
+      ],
+      "grupo": "Estrutura"
+    }
+  ]
+}

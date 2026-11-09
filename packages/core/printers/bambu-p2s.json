@@ -1,0 +1,15 @@
+{
+  "id": "bambu-p2s",
+  "nome": "Bambu Lab P2S",
+  "volume": { "x": 256, "y": 256, "z": 256 },
+  "formaMesa": "retangular",
+  "bicos": [0.2, 0.4, 0.6, 0.8],
+  "bicoPadrao": 0.4,
+  "filamentoPadrao": "pla",
+  "slicer": "bambustudio",
+  "camaraFechada": true,
+  "ams": true,
+  "camada": { "padrao": 0.2, "min": 0.08, "max": 0.28 },
+  "regras": { "paredeMin": 0.8, "detalheMin": 0.4, "overhangMax": 45, "pontesMax": 10 },
+  "calibracao": null
+}

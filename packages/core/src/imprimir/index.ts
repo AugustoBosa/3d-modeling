@@ -1,0 +1,5 @@
+export * from './tipos.ts'
+export * from './verificar.ts'
+export * from './filamento.ts'
+export * from './projeto.ts'
+export * from './orientacao.ts'

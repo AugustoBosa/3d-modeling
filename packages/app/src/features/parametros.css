@@ -1,0 +1,13 @@
+/* Tabela de parâmetros (parametros-ui.ts). Cores só por tokens de tokens.css. */
+.tabela-parametros { width: 100%; border-collapse: collapse; font-size: 12px; color: var(--txt) }
+.tabela-parametros th { text-align: left; font-weight: normal; color: var(--titulo); padding: 2px 4px; border-bottom: 1px solid var(--borda) }
+.tabela-parametros td { padding: 2px 2px; border-bottom: 1px solid var(--borda); vertical-align: middle }
+.tabela-parametros .pm-celula { width: 100%; box-sizing: border-box; min-width: 0; background: var(--painel); color: var(--txt); border: 1px solid var(--borda-input); border-radius: var(--raio-btn); padding: 2px 4px; font: inherit }
+.tabela-parametros .pm-celula:focus { border-color: var(--selecao); outline: none }
+.tabela-parametros .pm-valor { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ok) }
+.tabela-parametros .pm-valor.erro { color: var(--erro); white-space: normal; text-align: left; font-size: 11px; overflow-wrap: anywhere }
+.tabela-parametros .pm-excluir { min-height: 0; padding: 0 5px; line-height: 1.5 }
+.tabela-parametros tr.ciclo td { background: var(--card) }
+.tabela-parametros tr.ciclo .pm-valor { color: var(--erro) }
+.tabela-parametros tfoot td { border-bottom: 0; padding-top: 6px }
+.tabela-parametros tfoot .pm-celula { font-size: 12px }

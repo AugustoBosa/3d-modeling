@@ -1,0 +1,6 @@
+{ "id": "petg", "nome": "PETG", "densidade": 1.27,
+  "temp": { "bico": [230, 250], "mesa": [70, 85] },
+  "regras": { "overhangMax": 40, "paredeMin": 0.8, "encolhimentoXY": 0.0,
+              "folgaPadrao": { "justo": 0.15, "deslizante": 0.25, "livre": 0.40 },
+              "requerCamaraFechada": false, "flexivel": false },
+  "compat": { "anycubic-i3-mega-s": "ok", "bambu-p2s": "ok" } }

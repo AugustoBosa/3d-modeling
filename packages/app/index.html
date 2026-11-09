@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3d-modeling</title>
+  <script>
+    // tema antes da primeira pintura (evita piscar): preferência salva ou prefers-color-scheme. A lógica oficial está em src/tema.ts.
+    try {
+      var p = (JSON.parse(localStorage.getItem('3dm.prefs')) || {}).tema
+      var claro = p === 'claro' || (p !== 'escuro' && matchMedia('(prefers-color-scheme: light)').matches)
+      document.documentElement.dataset.theme = claro ? 'light' : 'dark'
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- sem texto aqui: todo texto de UI vem de src/textos.ts -->
+  <header id="topo"></header>
+  <div id="corpo">
+    <aside id="esq"></aside>
+    <main id="vista"></main>
+    <button id="abaDir" type="button"></button>
+    <aside id="dir"></aside>
+  </div>
+  <section id="linha"></section>
+  <footer id="status"></footer>
+  <div id="toast" role="status" hidden></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

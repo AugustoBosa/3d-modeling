@@ -1,0 +1,15 @@
+{
+  "id": "anycubic-i3-mega-s",
+  "nome": "Anycubic i3 Mega S",
+  "volume": { "x": 210, "y": 210, "z": 205 },
+  "formaMesa": "retangular",
+  "bicos": [0.4],
+  "bicoPadrao": 0.4,
+  "filamentoPadrao": "pla",
+  "slicer": "prusaslicer",
+  "camaraFechada": false,
+  "ams": false,
+  "camada": { "padrao": 0.2, "min": 0.07, "max": 0.36 },
+  "regras": { "paredeMin": 0.8, "detalheMin": 0.4, "overhangMax": 45, "pontesMax": 10 },
+  "calibracao": null
+}

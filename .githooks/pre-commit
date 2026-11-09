@@ -1,0 +1,11 @@
+#!/bin/sh
+# Atualiza o grafo graphify (só AST, sem LLM) e inclui no commit. Nunca usar --no-verify.
+if ! command -v graphify >/dev/null 2>&1; then
+  echo "pre-commit: graphify não encontrado, grafo NÃO atualizado" >&2
+  exit 0
+fi
+PYTHONHASHSEED=0 graphify update . --force >/dev/null 2>&1 || echo "pre-commit: graphify update falhou, grafo pode estar desatualizado" >&2
+for f in graphify-out/graph.json graphify-out/GRAPH_REPORT.md; do
+  [ -f "$f" ] && git add "$f"
+done
+exit 0

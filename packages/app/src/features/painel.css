@@ -1,0 +1,12 @@
+/* Painel de feature (painel.ts). Cores só por tokens de tokens.css. */
+.pf-painel { display: flex; flex-direction: column; gap: 10px; padding: 8px 16px; font-size: 12px; color: var(--txt) }
+.pf-painel [hidden] { display: none !important }
+.pf-titulo { margin: 0; font-size: 13px; color: var(--titulo) }
+.pf-linha { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 4px 8px; align-items: center }
+.pf-linha > label { color: var(--nota); overflow-wrap: anywhere }
+.pf-linha input:not([type=checkbox]), .pf-linha select { min-width: 0; width: 100% }
+.pf-plano { display: flex; gap: 4px }
+.pf-plano select, .pf-plano input { min-width: 0; flex: 1 }
+.pf-lista { display: flex; flex-wrap: wrap; gap: 6px }
+.pf-msgs { margin: 0; padding: 0; list-style: none; color: var(--erro); font-size: 11px }
+.pf-acoes { display: flex; justify-content: flex-end; gap: 8px }

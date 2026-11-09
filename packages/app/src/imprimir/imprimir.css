@@ -1,0 +1,16 @@
+/* Aba Imprimir (painel.ts, slots.ts). Cores só por tokens de tokens.css. */
+.imp-painel h3, .imp-slots h3 { margin: 8px 0 4px; font-size: 12px; color: var(--titulo) }
+.imp-massa { margin: 4px 0; font-size: 12px; color: var(--txt) }
+.imp-ok { color: var(--ok); font-size: 12px }
+.imp-aviso { color: var(--aviso); font-size: 12px }
+.imp-achados { list-style: none; margin: 4px 0; padding: 0; font-size: 12px }
+.imp-achados li { padding: 2px 0; overflow-wrap: anywhere }
+.imp-achados .sev-bloqueio, .imp-achados .sev-erro { color: var(--erro) }
+.imp-achados .sev-aviso { color: var(--aviso) }
+.imp-achados .sev-info { color: var(--nota) }
+.imp-bloqueio { margin: 6px 0; color: var(--erro); font-size: 12px }
+.imp-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 6px }
+.imp-slots table { width: 100%; border-collapse: collapse; font-size: 12px }
+.imp-slots th, .imp-slots td { padding: 2px 4px; text-align: left; border-bottom: 1px solid var(--borda) }
+.imp-slots input[type="color"] { width: 36px; min-height: 0; padding: 0 }
+.imp-corslot { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; align-items: center; font-size: 12px }

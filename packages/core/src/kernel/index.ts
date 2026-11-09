@@ -1,0 +1,5 @@
+export * from './tipos.ts'
+export * from './kernel.ts'
+export * from './lixo.ts'
+export * from './malha.ts'
+export * from './perfil.ts'

@@ -1,0 +1,45 @@
+/* Modo customizar (modo.ts) e painel Parâmetros expostos (expor.ts). Cores só por tokens de tokens.css. */
+
+/* com body.customizar: só a vista e o formulário dos expostos; esquerda, linha de comando e sketch somem */
+body.customizar #esq,
+body.customizar #linha,
+body.customizar #abaDir,
+body.customizar #topo > .menu,
+body.customizar #topo > .abas,
+body.customizar #topo > :nth-last-child(-n+2),
+body.customizar .sk-camada,
+body.customizar .sk-barra,
+body.customizar .sk-dyn { display: none }
+body.customizar #corpo { overflow-x: hidden }
+body.customizar #corpo #dir { display: block; padding: 12px 16px; overflow-x: hidden }
+body.customizar #dir button,
+body.customizar #dir select,
+body.customizar #dir input[type=number],
+body.customizar #dir input[type=text],
+body.customizar #dir textarea { min-height: var(--alvo) }
+body.customizar #dir select,
+body.customizar #dir input,
+body.customizar #dir textarea { min-width: 0; max-width: 100% }
+body.customizar #dir input[type=checkbox] { width: 22px; height: 22px; margin: 0 }
+
+body.customizar .cz label { min-height: var(--alvo); align-items: center; margin: 4px 0 }
+body.customizar .cz label.sn { display: flex; justify-content: space-between; gap: 8px }
+body.customizar .cz input[type=range] { min-height: var(--alvo) }
+body.customizar .cz fieldset { min-width: 0; margin: 0 0 12px; padding: 8px 10px; border: 1px solid var(--borda); border-radius: var(--raio-card) }
+body.customizar .cz legend { padding: 0 4px; color: var(--titulo); font-weight: 600 }
+body.customizar .cz .cz-acoes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px }
+body.customizar .cz .cz-acoes button { flex: 1 1 auto }
+
+/* painel Parâmetros expostos (modo editor) */
+.expor .expor-form { display: grid; gap: 4px; margin-top: 8px }
+.expor .expor-form input,
+.expor .expor-form select { min-width: 0; max-width: 100% }
+.expor .expor-form label textarea { grid-column: 1 / 3; width: 100%; min-height: 6em; resize: vertical; font: 12px ui-monospace, Consolas, monospace; padding: 4px 6px; background: var(--bg); color: var(--txt); border: 1px solid var(--borda-input); border-radius: var(--raio-btn) }
+.expor .expor-form .acoes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px }
+.expor li { display: flex; gap: 8px; align-items: center; justify-content: space-between }
+.expor li span { overflow-wrap: anywhere }
+
+/* celular: sem barra de status (a vista fica fixa no topo) */
+@media (max-width: 699px) {
+  body.customizar #status { display: none }
+}

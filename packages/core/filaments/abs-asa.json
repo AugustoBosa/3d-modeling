@@ -1,0 +1,7 @@
+{ "id": "abs-asa", "nome": "ABS / ASA", "densidade": 1.05,
+  "variantes": { "abs": 1.04, "asa": 1.07 },
+  "temp": { "bico": [240, 260], "mesa": [90, 110] },
+  "regras": { "overhangMax": 45, "paredeMin": 0.8, "encolhimentoXY": 0.0065,
+              "folgaPadrao": { "justo": 0.15, "deslizante": 0.25, "livre": 0.40 },
+              "requerCamaraFechada": true, "flexivel": false },
+  "compat": { "anycubic-i3-mega-s": "aviso", "bambu-p2s": "ok" } }

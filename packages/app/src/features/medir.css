@@ -1,0 +1,9 @@
+/* Medidas 3D (medir-ui.ts) e cotas da caixa (cotas3d.ts). Cores por tokens de tokens.css (--cota, --card, --txt). */
+.medir-camada { position: absolute; inset: 0; pointer-events: none; overflow: hidden; font-size: 12px }
+
+.medida, .cota3d {
+  position: absolute; transform: translate(-50%, -50%); white-space: nowrap; pointer-events: none;
+  padding: 2px 6px; border-radius: var(--raio-btn);
+  font: 600 12px/1.2 system-ui, sans-serif; color: var(--cota);
+  background: var(--card); border: 1px solid var(--cota);
+}

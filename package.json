@@ -1,0 +1,19 @@
+{
+  "name": "3d-modeling",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "setup": "git config core.hooksPath .githooks",
+    "dev": "npm run dev -w @3dm/app",
+    "build": "tsc --noEmit && tsc --noEmit -p packages/core && npm run build -w @3dm/app",
+    "test": "node --test \"packages/*/test/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6"
+  }
+}

@@ -1,0 +1,40 @@
+/* Tokens de cor e forma (PROJETO_BASE §4.2). Escuro é o padrão; o claro redefine os mesmos tokens.
+   O tema vem de data-theme em <html> (tema.ts resolve "auto" via prefers-color-scheme).
+   Os tokens em hex são lidos pelo three.js (vista.ts) e conferidos por test/tokens.test.ts (contraste WCAG AA). */
+:root {
+  color-scheme: dark;
+  --bg: #1d1f22; --card: rgba(29, 31, 34, .92); --painel: #26292d;
+  --borda: #444444; --borda-input: #555555;
+  --btn: #3a3f45; --btn-txt: #eeeeee;
+  --ativo: #4f6072; --ativo-borda: #88aaaa;
+  --txt: #dddddd; --titulo: #aaaabb; --nota: #99aa99;
+  --aviso: #e9a35a; --erro: #ff5a4d; --ok: #5fc16f; --atencao: #e6c14a;
+  --peca: #b8b4ac; --aresta: #15171a; --vertice: #ffa31a; --destaque: #ffa31a;
+  --cota: #ffb000;
+  --eixo-x: #ff3653; --eixo-y: #8adb00; --eixo-z: #2c8fff;
+  --folha-bg: #1b1d21; --folha-traco: #e3e8ee; --simetria: #7d8590;
+  --selecao: #4da3ff;
+  --restricao-ok: #5fc16f; --restricao-sub: #e3e8ee; --restricao-conflito: #ff5a4d;
+  --grid-menor: #2c2f34; --grid-maior: #41464d;
+  --volume-impressora: #6f8fa8; --mesa: #23262a;
+  --raio-btn: 4px; --raio-card: 6px; --raio-dialog: 8px;
+  --alvo: 28px; /* altura mínima de botão; sobe no celular */
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f5f7; --card: rgba(244, 245, 247, .92); --painel: #e9ebee;
+  --borda: #c3c8ce; --borda-input: #aab0b7;
+  --btn: #dde0e4; --btn-txt: #1d1f22;
+  --ativo: #c7d5e4; --ativo-borda: #4f6f8f;
+  --txt: #1d1f22; --titulo: #44505c; --nota: #46644a;
+  --aviso: #8f5200; --erro: #c0281c; --ok: #1b7a30; --atencao: #7d6200;
+  --peca: #8f8a80; --aresta: #15171a; --vertice: #b35f00; --destaque: #b35f00;
+  --cota: #946500;
+  --eixo-x: #d6203a; --eixo-y: #4c8a00; --eixo-z: #1f6fd9;
+  --folha-bg: #ffffff; --folha-traco: #1d1f22; --simetria: #5f6872;
+  --selecao: #1f6fd9;
+  --restricao-ok: #1b7a30; --restricao-sub: #5b6672; --restricao-conflito: #c0281c;
+  --grid-menor: #dadde1; --grid-maior: #b9bfc7;
+  --volume-impressora: #3f6684; --mesa: #e1e4e8;
+}

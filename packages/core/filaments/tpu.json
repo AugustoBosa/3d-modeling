@@ -1,0 +1,6 @@
+{ "id": "tpu", "nome": "TPU 95A", "densidade": 1.21,
+  "temp": { "bico": [210, 230], "mesa": [40, 60] },
+  "regras": { "overhangMax": 35, "paredeMin": 1.2, "encolhimentoXY": 0.0,
+              "folgaPadrao": { "justo": 0.2, "deslizante": 0.3, "livre": 0.45 },
+              "requerCamaraFechada": false, "flexivel": true },
+  "compat": { "anycubic-i3-mega-s": "aviso", "bambu-p2s": "ok" } }

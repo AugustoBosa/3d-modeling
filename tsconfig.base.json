@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "bundler",
+    "strict": true, "noEmit": true, "skipLibCheck": true,
+    "erasableSyntaxOnly": true, "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true, "resolveJsonModule": true,
+    "noUncheckedSideEffectImports": true, "isolatedModules": true
+  }
+}

@@ -1,0 +1,21 @@
+/* Árvore de features (arvore.ts). Cores só por tokens de tokens.css. */
+.arvore { list-style: none; margin: 0; padding: 0; position: relative; font-size: 12px }
+.arvore > li { border-bottom: 1px solid var(--borda); padding: 2px 0 }
+.arvore .arvore-linha { display: flex; align-items: center; gap: 4px }
+.arvore .arvore-nome { flex: 1; min-width: 0; text-align: left; border: 0; background: none; padding: 2px 4px; color: var(--txt); overflow-wrap: anywhere }
+.arvore .arvore-nome:hover { background: var(--card) }
+.arvore .arvore-icone { display: inline-block; width: 1.4em; color: var(--titulo) }
+.arvore .arvore-btn { min-height: 0; padding: 0 5px; line-height: 1.5 }
+.arvore .arvore-erro { margin: 2px 0 0 1.4em; color: var(--erro); font-size: 11px; overflow-wrap: anywhere }
+.arvore > li.selecionada .arvore-nome { background: var(--ativo) }
+.arvore > li.erro .arvore-rotulo { color: var(--erro) }
+.arvore > li.suspensa .arvore-rotulo { color: var(--aviso) }
+.arvore > li.revertida { opacity: .5 }
+.arvore > li.suprimida .arvore-rotulo { text-decoration: line-through }
+.arvore > li.oculta .arvore-rotulo { color: var(--nota) }
+.arvore > li.marcador { display: flex; align-items: center; gap: 6px; height: 14px; margin: 2px 0; padding: 0; border: 0; color: var(--destaque); font-size: 11px; cursor: ns-resize; touch-action: none; user-select: none }
+.arvore > li.marcador::after { content: ''; flex: 1; border-top: 2px solid var(--destaque) }
+
+/* Menu Shift+A (solido.ts) */
+.menu-adicionar { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); z-index: 8; display: flex; flex-wrap: wrap; gap: 4px; max-width: 80%; padding: 6px; background: var(--painel); border: 1px solid var(--borda-input); border-radius: var(--raio-card) }
+.menu-adicionar b { width: 100%; font-size: 12px; color: var(--titulo) }

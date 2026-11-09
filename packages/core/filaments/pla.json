@@ -1,0 +1,6 @@
+{ "id": "pla", "nome": "PLA", "densidade": 1.24,
+  "temp": { "bico": [200, 215], "mesa": [55, 65] },
+  "regras": { "overhangMax": 45, "paredeMin": 0.8, "encolhimentoXY": 0.0,
+              "folgaPadrao": { "justo": 0.1, "deslizante": 0.2, "livre": 0.35 },
+              "requerCamaraFechada": false, "flexivel": false },
+  "compat": { "anycubic-i3-mega-s": "ok", "bambu-p2s": "ok" } }
